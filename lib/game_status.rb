@@ -45,8 +45,9 @@ def draw?(board)
 end
 
 def winner(board)
-  if won?(board) do
-    puts board[win_combo[0]]
+  WIN_COMBINATIONS.find do |win_combo|
+    if board[win_combo[0]] == board[win_combo[1]] && board[win_combo[0]] == board[win_combo[2]] && position_taken?(board, win_combo[1])
+      puts board[win_combo[0]] 
+    end
   end
-end
 end

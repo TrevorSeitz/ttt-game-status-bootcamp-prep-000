@@ -20,9 +20,11 @@ def full?(board)
   counter=0
   # board.all? do |position|
   while counter < 9
-    position_taken?(board, counter)
+    if !position_taken?(board, counter)
+      false
     counter += 1
   end
+  true
 end
 
 

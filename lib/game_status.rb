@@ -25,14 +25,21 @@ def won?(board)
     end
   end
 end
-if board.each do |position_1, position_2, position_3|
-    if position_1 != position_2
-      false
-    elsif position_1 != position_3
-      false
-    else
-      true
-    end
+# if board.each do |position_1, position_2, position_3|
+#     if position_1 != position_2
+#       false
+#     elsif position_1 != position_3
+#       false
+#     else
+#       true
+#     end
+#   end
+# end
+
+def won?(board)
+  WIN_COMBINATIONS.find do |win_combo|
+    board[win_combo[0]] == board[win_combo[1]] && board[win_combo[0]] == board[win_combo[2]] && position_taken?(board, win_combo[1])
   end
 end
+
 end

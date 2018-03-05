@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 
 def full?(board)
-  board.all do |index|
+  board.all? do |index|
     position_taken?(board, index)
   end
 end

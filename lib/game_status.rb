@@ -20,7 +20,7 @@ def full?(board)
   counter=0
   board.all? do |position|
     position_taken?(board, counter)
-      counter += 1
+    counter += 1
   end
 end
 
@@ -33,4 +33,8 @@ end
 
 def over?(board)
   full?(board) || won?(board)
+end
+
+def draw?(board)
+  full?(board) && !won?(board)
 end

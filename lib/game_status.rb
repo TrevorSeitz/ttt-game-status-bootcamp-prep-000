@@ -26,10 +26,12 @@ def won?(board)
   end
 end
   board.each do |position|
-    if position[0] == position[1] && position[0] == position[2]
-      true
-    else
+    if position[0] != position[1]
       false
+    elsif position[0] != position[2]
+      false
+    else
+      true
     end
   end
 end

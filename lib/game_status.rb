@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   if board.all? do |position|
     if position == " "
-      puts false
+      false
     else
       true
     end

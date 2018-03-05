@@ -1,4 +1,4 @@
-# Helper Method
+#Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -25,4 +25,11 @@ def won?(board)
     end
   end
 end
+  board.each do |position|
+    if position[0] == position[1] && position[0] == position[3]
+      true
+    else
+      false
+    end
+  end
 end

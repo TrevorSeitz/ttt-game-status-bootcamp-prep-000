@@ -46,6 +46,7 @@ end
 
 def winner(board)
   if won?(board) do
-    puts board[win_combo[0]] 
+    puts board[win_combo[0]]
   end
+end
 end

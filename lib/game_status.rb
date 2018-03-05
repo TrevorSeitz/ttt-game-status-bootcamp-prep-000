@@ -18,7 +18,8 @@ WIN_COMBINATIONS = [
 
 def full?(board)
   counter=0
-  board.all? do |position|
+  # board.all? do |position|
+  while counter < 9
     position_taken?(board, counter)
     counter += 1
   end

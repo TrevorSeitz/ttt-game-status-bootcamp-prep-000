@@ -25,6 +25,7 @@ def full?(board)
     end
     counter += 1
   end
+  true
 end
 
 

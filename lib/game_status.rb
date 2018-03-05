@@ -25,7 +25,7 @@ def won?(board)
     end
   end
 end
-  board.each do |position_1, position_2, position_3|
+if board.each do |position_1, position_2, position_3|
     if position_1 != position_2
       false
     elsif position_1 != position_3
@@ -34,4 +34,5 @@ end
       true
     end
   end
+end
 end

@@ -23,6 +23,7 @@ def full?(board)
     if !position_taken?(board, counter)
       false
     counter += 1
+    end
   end
   true
 end

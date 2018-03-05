@@ -25,10 +25,10 @@ def won?(board)
     end
   end
 end
-if board.each do |position|
-    if position[0] != position[1]
+if WIN_COMBINATIONS.find do |position|
+    if board[position[0]] != board[position[1]]
       false
-    elsif position[0] != position[2]
+    elsif board[position[0]] != board[position[2]]
       false
     else
       true

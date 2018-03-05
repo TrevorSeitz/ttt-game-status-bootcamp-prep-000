@@ -29,4 +29,6 @@ def won?(board)
   end
 end
 
-# end
+def over?(board)
+  full(board) || won?(board)
+end

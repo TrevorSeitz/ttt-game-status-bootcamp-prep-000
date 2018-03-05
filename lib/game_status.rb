@@ -18,14 +18,15 @@ WIN_COMBINATIONS = [
 
 def full?(board)
   counter=0
+  in_progress = true
   # board.all? do |position|
   while counter < 9
     if !position_taken?(board, counter)
-      false
+      in_progress = false
     end
     counter += 1
   end
-  true
+  in_progress
 end
 
 

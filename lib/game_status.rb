@@ -17,14 +17,14 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-#   if board.all? do |position|
-#     if position == " "
-#       false
-#     else
-#       true
-#     end
-#   end
-# end
+  if board.all? do |position|
+    if position == " "
+      false
+    else
+      true
+    end
+  end
+end
 if board.each do |position|
     if position[0] != position[1]
       false

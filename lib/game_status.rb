@@ -30,5 +30,5 @@ def won?(board)
 end
 
 def over?(board)
-  full(board) || won?(board)
+  full?(board) || won?(board)
 end

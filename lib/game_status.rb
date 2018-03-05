@@ -25,13 +25,13 @@ def won?(board)
     end
   end
 end
-  board.each do |position|
-    if position[0] != position[1]
-      false
-    elsif position[0] != position[2]
-      false
-    else
-      true
-    end
-  end
+  # board.each do |position|
+  #   if position[0] != position[1]
+  #     false
+  #   elsif position[0] != position[2]
+  #     false
+  #   else
+  #     true
+  #   end
+  # end
 end

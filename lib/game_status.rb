@@ -25,13 +25,13 @@ def won?(board)
     end
   end
 end
-if WIN_COMBINATIONS.find do |position|
+WIN_COMBINATIONS.find do |position|
     board[position[0]] == board[position[1]] && board[position[0]] == board[position[2]]
     #   true
     # else
     #   false
     # end
-  end
+  # end
 end
 
 # def won?(board)

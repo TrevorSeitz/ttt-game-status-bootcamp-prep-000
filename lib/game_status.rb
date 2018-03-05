@@ -17,29 +17,29 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  if board.all? do |position|
-    if position == " "
-      false
-    else
-      true
-    end
-  end
-end
-# if board.each do |position_1, position_2, position_3|
-#     if position_1 != position_2
-#       false
-#     elsif position_1 != position_3
+#   if board.all? do |position|
+#     if position == " "
 #       false
 #     else
 #       true
 #     end
 #   end
 # end
-
-def won?(board)
-  WIN_COMBINATIONS.find do |win_combo|
-    board[win_combo[0]] == board[win_combo[1]] && board[win_combo[0]] == board[win_combo[2]] && position_taken?(board, win_combo[1])
+if board.each do |position|
+    if position[0] != position[1]
+      false
+    elsif position[0] != position[2]
+      false
+    else
+      true
+    end
   end
 end
+
+# def won?(board)
+#   WIN_COMBINATIONS.find do |win_combo|
+#     board[win_combo[0]] == board[win_combo[1]] && board[win_combo[0]] == board[win_combo[2]] && position_taken?(board, win_combo[1])
+#   end
+# end
 
 end
